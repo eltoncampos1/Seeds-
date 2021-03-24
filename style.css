@@ -6,6 +6,9 @@
 
 html {
 
+    width: 100%;
+    height: 100%;
+
     @media (max-width:1080px) {
         font-size: 93.75%;
     }
@@ -17,7 +20,8 @@ html {
 
 body {
    font-family: 'Roboto Slab', sans-serif;
-   background: #7C937B;
+    background-image: url('./assets/bg_img.png');
+    background-size: cover;
 }
 
 button {
@@ -26,7 +30,7 @@ button {
 
 header {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2)
+    background-color: rgba(255, 255, 255, 0.4)
 }
 
 .container-header {
@@ -71,6 +75,7 @@ li a:hover {
     color: #363C2A;
 }
 
+
 nav button {
     width: 8rem;
     height:3rem;
@@ -94,12 +99,13 @@ main {
 }
 
 section.center {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     margin-top: 8rem;
     height: 24rem;
 }
 
 .container {
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 
@@ -142,7 +148,7 @@ section.center {
 }
 
 .description button:hover {
-    filter: brightness(0.9)
+    filter: brightness(0.8)
 }
 
 .title {
@@ -163,4 +169,57 @@ section.center {
     height: 3px;
     width:35%
 }
+
+section.most-pop {
+    width: 100%;
+    max-width: 78rem;
+    height:30rem;
+
+    background-color: #fff;
+
+    margin: 12rem auto;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 2rem;
+}
+
+.most-title {
+    text-align: center;
+}
+
+section.most-pop .most-title h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.most-title img {
+    width: 50%;
+    height: 4px;
+}
+
+.images {
+    display: flex;
+    padding: 4.5rem;
+    align-items: center;
+}
+
+.images .image {
+    width: 13.4rem;
+    margin: 2.5rem;
+
+    transition: width 0.3s ease;
+}
+
+.images .image:hover {
+    width: 17rem;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 1.3rem;
+}
+
 
